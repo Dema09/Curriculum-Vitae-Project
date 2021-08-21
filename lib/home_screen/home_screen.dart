@@ -1,5 +1,8 @@
 import 'dart:io';
 
+import 'package:dummy_project_for_exercise/body/body.dart';
+import 'package:dummy_project_for_exercise/home_screen/menu.dart';
+import 'package:dummy_project_for_exercise/home_screen/welcome_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +17,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      drawer: MenuBar(),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
           title: Center(
               child: Text(
                 'My Portfolio',
@@ -23,20 +27,14 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'Castoro',
-                    color: Colors.black
+                    color: Colors.white
                 ),
               )
           )
       ),
       body:
-          Align(
-            alignment: Alignment.topCenter,
-            child: CircleAvatar(
-                radius: 60,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('assets/images/4x6.jpg'),
-            ),
-          )
+          WelcomePage()
     );
   }
 }
+
