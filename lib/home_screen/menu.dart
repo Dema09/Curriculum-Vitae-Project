@@ -1,6 +1,5 @@
 import 'package:dummy_project_for_exercise/content/about_me.dart';
 import 'package:dummy_project_for_exercise/content/contact_me.dart';
-import 'package:dummy_project_for_exercise/content/introduction.dart';
 import 'package:dummy_project_for_exercise/content/list_content.dart';
 import 'package:flutter/material.dart';
 
@@ -24,12 +23,6 @@ class MenuBar extends StatelessWidget{
                  image: AssetImage('assets/images/bintang.jpg')
                )
              ),
-           ),
-           ListTile(
-             title: Text('Introduction'),
-             onTap: () => Navigator.push(
-                 context,
-                 MaterialPageRoute(builder: (context) => Introduction())),
            ),
            ListTile(
              title: Text('About me'),
