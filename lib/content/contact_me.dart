@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class ContactMe extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Container(
+      child: Column(
+        children: [
+          Expanded(flex: 2, child: Container(color: Colors.black))
+        ]
+      )
+      );
   }
   
 }

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:dummy_project_for_exercise/body/body.dart';
 import 'package:dummy_project_for_exercise/home_screen/menu.dart';
 import 'package:dummy_project_for_exercise/home_screen/welcome_page.dart';
+import 'package:dummy_project_for_exercise/widget/bottom_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      drawer: MenuBar(),
       appBar: AppBar(
         backgroundColor: Colors.black,
           title: Center(
@@ -33,7 +33,8 @@ class _HomePageState extends State<HomePage> {
           )
       ),
       body:
-          WelcomePage()
+          WelcomePage(),
+      bottomNavigationBar: BottomNavigation(),
     );
   }
 }
