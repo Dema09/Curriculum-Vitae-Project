@@ -44,13 +44,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/galaksi.jpg
-    - assets/images/bintang.jpg
     - assets/images/4x6.jpg
     - assets/images/Foto_Semi_Formal.jpg
-    - assets/images/wisuda.jpg
-
-
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -59,9 +54,9 @@ flutter:
   # https://flutter.dev/assets-and-images/#from-packages
 
 fonts:
-  - family: Castoro
+  - family: roadgeek-2000-series-em
     fonts:
-      asset: fonts/Castoro-Regular.ttf
+      asset: fonts/roadgeek-2000-series-em.ttf
 
   - family: FiraSansCondensed-Regular
     fonts:
