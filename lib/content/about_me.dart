@@ -1,7 +1,7 @@
 import 'package:avatar_view/avatar_view.dart';
 import 'package:dummy_project_for_exercise/widget/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 
 class AboutMe extends StatefulWidget {
 
@@ -12,6 +12,8 @@ class AboutMe extends StatefulWidget {
 }
 
 class _AboutMeState extends State<AboutMe>{
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +51,7 @@ class _AboutMeState extends State<AboutMe>{
                         style: TextStyle(
                             fontSize: 20,
                             color: Colors.white,
-                            fontFamily: 'FiraSansCondensed-Regular.ttf'
+                            fontFamily: 'Roadgeek'
                         )
                     ),
                   ],
@@ -63,7 +65,6 @@ class _AboutMeState extends State<AboutMe>{
                 color: Colors.white,
               )
           ),
-          BottomNavigation()
         ],
       ),
       bottomNavigationBar: BottomNavigation(),

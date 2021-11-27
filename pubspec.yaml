@@ -46,18 +46,11 @@ flutter:
   assets:
     - assets/images/4x6.jpg
     - assets/images/Foto_Semi_Formal.jpg
+  fonts:
+    - family: Roadgeek
+      fonts:
+        - asset: fonts/Roadgeek-2000-Series-em.ttf
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-
-fonts:
-  - family: roadgeek-2000-series-em
-    fonts:
-      asset: fonts/roadgeek-2000-series-em.ttf
-
-  - family: FiraSansCondensed-Regular
-    fonts:
-      asset: fonts/FiraSansCondensed-Regular.ttf
+    - family: FiraSansCondensed-Regular
+      fonts:
+        - asset: fonts/FiraSansCondensed-Regular.ttf
