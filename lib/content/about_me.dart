@@ -1,5 +1,8 @@
 import 'package:avatar_view/avatar_view.dart';
+import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/widget/bottom_navigation_bar.dart';
+import 'package:dummy_project_for_exercise/widget/divider_widget.dart';
+import 'package:dummy_project_for_exercise/widget/text_widget.dart';
 import 'package:flutter/material.dart';
 
 
@@ -23,12 +26,13 @@ class _AboutMeState extends State<AboutMe>{
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
-              flex: 2,
+              flex: 1,
               child: Container(
                 color: Colors.black,
                 child: Column(
                   children: [
                     SizedBox(height: 16),
+
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 35, 0, 0),
                       child: AvatarView(
@@ -46,14 +50,27 @@ class _AboutMeState extends State<AboutMe>{
                         ),
                       ),
                     ),
-                    Text(
-                        'About Me',
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                            fontFamily: 'Roadgeek'
-                        )
+
+                    Padding(
+                      padding: EdgeInsets.only(top: 30.0),
+                      child: Text(
+                          'About Me',
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontFamily: 'Roadgeek'
+                          )
+                      ),
                     ),
+
+                    Padding(
+                        padding: EdgeInsets.only(top: 15.0),
+                        child: DividerWidget(Colors.white, 20, 2, 10, 10)
+                    ),
+
+                    SizedBox(height: 20),
+
+                    TextWidget(text: aboutMeDesc, fontFamily: roadgeek, fontColor: whiteColor, fontSize: 12)
                   ],
                 ),
               )

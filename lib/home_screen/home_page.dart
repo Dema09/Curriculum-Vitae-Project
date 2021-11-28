@@ -1,6 +1,7 @@
 
 import 'dart:ui';
 
+import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/widget/text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,6 @@ class WelcomePage extends StatefulWidget{
 }
 
 class _WelcomePage extends State<WelcomePage>{
-
-  Color whiteColor = Colors.white;
-  String roadgeekFont = 'Roadgeek';
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +42,8 @@ class _WelcomePage extends State<WelcomePage>{
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextWidget(text: 'Made Raja Adi', fontFamily: 'Roadgeek', fontSize: 32, fontColor: whiteColor, fontWeight: FontWeight.bold),
-                TextWidget(text: 'Full-Stack Mobile Developer', fontFamily: 'Roadgeek', fontSize: 16, fontColor: whiteColor)
+                TextWidget(text: myName, fontFamily: roadgeek, fontSize: 32, fontColor: whiteColor, fontWeight: FontWeight.bold),
+                TextWidget(text: fullStackMobileDeveloper, fontFamily: roadgeek, fontSize: 16, fontColor: whiteColor)
               ],
             )
           ),
