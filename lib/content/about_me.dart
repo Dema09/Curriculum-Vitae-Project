@@ -16,7 +16,6 @@ class AboutMe extends StatefulWidget {
 
 class _AboutMeState extends State<AboutMe>{
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +31,6 @@ class _AboutMeState extends State<AboutMe>{
                 child: Column(
                   children: [
                     SizedBox(height: 16),
-
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 35, 0, 0),
                       child: AvatarView(
@@ -50,36 +48,58 @@ class _AboutMeState extends State<AboutMe>{
                         ),
                       ),
                     ),
-
                     Padding(
                       padding: EdgeInsets.only(top: 30.0),
                       child: Text(
-                          'About Me',
+                          aboutMe,
                           style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
-                              fontFamily: 'Roadgeek'
+                              fontFamily: roadgeek
                           )
                       ),
                     ),
-
                     Padding(
                         padding: EdgeInsets.only(top: 15.0),
                         child: DividerWidget(Colors.white, 20, 2, 10, 10)
                     ),
-
                     SizedBox(height: 20),
-
-                    TextWidget(text: aboutMeDesc, fontFamily: roadgeek, fontColor: whiteColor, fontSize: 12)
+                    TextWidget(
+                        text: aboutMeDesc,
+                        fontFamily: roadgeek,
+                        fontColor: whiteColor,
+                        fontSize: 12,
+                        textAlign: TextAlign.justify,
+                    )
                   ],
                 ),
               )
           ),
           Expanded(
               flex: 2,
-              child:
-              Container(
-                color: Colors.white,
+              child: Container(
+                child: Card(
+                  color: secondGreyColor,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(height: 10),
+                      TextWidget(
+                          text: myLongName,
+                          fontSize: 20,
+                          fontFamily: robotoMedium,
+                          fontColor: blackColor,
+                          fontWeight: FontWeight.bold
+                      ),
+                      TextWidget(
+                        text: myGpa,
+                        fontSize: 14,
+                        fontFamily: robotoLight,
+                        fontColor: blackColor
+                      )
+                    ]
+                  ),
+                )
               )
           ),
         ],

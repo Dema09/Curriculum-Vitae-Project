@@ -42,7 +42,7 @@ class _WelcomePage extends State<WelcomePage>{
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextWidget(text: myName, fontFamily: roadgeek, fontSize: 32, fontColor: whiteColor, fontWeight: FontWeight.bold),
+                TextWidget(text: myShortName, fontFamily: roadgeek, fontSize: 32, fontColor: whiteColor, fontWeight: FontWeight.bold),
                 TextWidget(text: fullStackMobileDeveloper, fontFamily: roadgeek, fontSize: 16, fontColor: whiteColor)
               ],
             )
