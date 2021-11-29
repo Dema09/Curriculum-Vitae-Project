@@ -51,6 +51,11 @@ flutter:
       fonts:
         - asset: fonts/Roadgeek-2000-Series-em.ttf
 
-    - family: FiraSansCondensed-Regular
+    - family: Roboto-Medium
       fonts:
-        - asset: fonts/FiraSansCondensed-Regular.ttf
+        - asset: fonts/Roboto-Medium.ttf
+
+    - family: Roboto-Light
+      fonts:
+        - asset: fonts/Roboto-Light.ttf
+
