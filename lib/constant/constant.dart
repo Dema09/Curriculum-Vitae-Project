@@ -15,7 +15,7 @@ const fullStackMobileDeveloper = 'Full-Stack Mobile Developer';
 
 const aboutMeDesc = "Currently graduated at Bina Nusantara University \nfrom School of Computer Science Major. \n\n"
     "Experienced on Back-End Development and Mobile App Development. \n\n"
-    "I am good at problem solving with several programming language, \n\n"
+    "I am good at problem solving with several programming language, \n"
     "team working, and communicative as well.";
 
 const aboutMe = "About Me";
