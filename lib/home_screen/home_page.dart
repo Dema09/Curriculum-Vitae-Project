@@ -1,5 +1,4 @@
 
-import 'dart:ui';
 
 import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/widget/text_widget.dart';
@@ -31,7 +30,7 @@ class _WelcomePage extends State<WelcomePage>{
           ),
         child: Image.asset(
             'assets/images/Foto_Semi_Formal.jpg',
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
             height: double.infinity,
             width: double.infinity,
         )

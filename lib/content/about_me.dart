@@ -3,6 +3,7 @@ import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/widget/bottom_navigation_bar.dart';
 import 'package:dummy_project_for_exercise/widget/divider_widget.dart';
 import 'package:dummy_project_for_exercise/widget/text_widget.dart';
+import 'package:dummy_project_for_exercise/widget/biodata_widget.dart';
 import 'package:flutter/material.dart';
 
 
@@ -64,13 +65,66 @@ class _AboutMeState extends State<AboutMe>{
                         child: DividerWidget(Colors.white, 20, 2, 10, 10)
                     ),
                     SizedBox(height: 20),
-                    TextWidget(
-                        text: aboutMeDesc,
-                        fontFamily: roadgeek,
-                        fontColor: whiteColor,
-                        fontSize: 12,
-                        textAlign: TextAlign.justify,
-                    )
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Column(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                            decoration: const BoxDecoration(
+                              color: Color(0xFFE5C266),
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20),
+                                bottomRight: Radius.circular(20),
+                              )
+                            ),
+                            child: TextWidget(
+                              text: biodata,
+                              fontFamily: roadgeek,
+                              fontColor: whiteColor,
+                              fontSize: 12,
+                              textAlign: TextAlign.center,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 100,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            TextWidget(
+                              text: placeOrDateOfBirth,
+                              fontColor: whiteColor,
+                              fontFamily: roadgeek,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            SizedBox(height: 10),
+                            TextWidget(
+                              text: placeOrDateOfBirthValue,
+                              fontColor: whiteColor,
+                              fontFamily: roadgeek,
+                              fontSize: 12,
+                              fontWeight: FontWeight.normal,
+                            )
+                          ],
+                        ),
+                    ),
+                  
+                    // SizedBox(
+                    //   width: 300,
+                    //   height: 300,
+                    //   child: TextWidget(
+                    //       text: aboutMeDesc,
+                    //       fontFamily: roadgeek,
+                    //       fontColor: whiteColor,
+                    //       fontSize: 12,
+                    //       textAlign: TextAlign.justify,
+                    //   ),
+                    // )
                   ],
                 ),
               )

@@ -2,7 +2,6 @@ import 'package:dummy_project_for_exercise/content/about_me.dart';
 import 'package:dummy_project_for_exercise/content/contact_me.dart';
 import 'package:dummy_project_for_exercise/content/portfolio.dart';
 import 'package:dummy_project_for_exercise/home_screen/main_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigation extends StatefulWidget{

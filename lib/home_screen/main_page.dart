@@ -1,11 +1,9 @@
-import 'dart:io';
 
 import 'package:dummy_project_for_exercise/content/about_me.dart';
 import 'package:dummy_project_for_exercise/content/contact_me.dart';
 import 'package:dummy_project_for_exercise/content/portfolio.dart';
 import 'package:dummy_project_for_exercise/home_screen/home_page.dart';
 import 'package:dummy_project_for_exercise/widget/bottom_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget{
