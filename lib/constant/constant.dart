@@ -12,10 +12,7 @@ const myPortfolio = 'My Portfolio';
 const myShortName = 'Made Raja Adi';
 const fullStackMobileDeveloper = 'Full-Stack Mobile Developer';
 
-const aboutMeDesc = "Currently graduated at Bina Nusantara University \nfrom School of Computer Science Major. \n\n"
-    "Experienced on Back-End Development and Mobile App Development. \n\n"
-    "I am good at problem solving with several programming language, \n"
-    "team working, and communicative as well.";
+const aboutMeDesc = "I’m Made Raja Adi Surya Saputra. Currently, I’m working at Home Credit Indonesia as Java Back-End Developer. Passionate and results-oriented Back-End Developer with a strong foundation in mobile application development and data science. As a graduate of Bina Nusantara University, I bring a balanced blend of technical expertise, analytical thinking, and a continuous drive to learn. Experienced in Agile team environments and complex software challenges, I’m dedicated to building scalable, secure, and impactful systems. I believe that every line of code is not just a set of instructions for a machine, but a meaningful contribution to improving systems and user experience.";
 
 // Label
 const biodata = "Biodata";
@@ -36,7 +33,7 @@ const myGpa = "GPA: 3.02";
 
 
 //Font Family Section
-const roadgeek = 'Roadgeek';
+const archivoBlack = 'ArchivoBlack';
 const robotoMedium = 'Roboto-Medium';
 const robotoLight = 'Roboto-Light';
 

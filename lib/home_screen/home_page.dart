@@ -1,7 +1,9 @@
 
+import 'dart:ui';
 
 import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/widget/text_widget.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatefulWidget{
@@ -16,38 +18,79 @@ class _WelcomePage extends State<WelcomePage>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(
-      child: Stack(
-        children: [
-          Container(
-            foregroundDecoration: BoxDecoration(
-                gradient: LinearGradient(
-                    colors: [Colors.black, Colors.transparent, Colors.transparent, Colors.black],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    stops: [0, 0.1, 0.4, 1]
+    return Scaffold(
+        body: Row(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Container(
+                color: Color(0xff0e172a),
+                child: Padding(
+                  padding: const EdgeInsets.all(32),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TextWidget(
+                            fontColor: whiteColor,
+                            fontFamily: archivoBlack,
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                            textAlign: TextAlign.left,
+                            text: myShortName
+                          ),
+                          SizedBox(height: 10),
+                          TextWidget(
+                            fontColor: whiteColor,
+                            fontFamily: robotoLight,
+                            fontSize: 18,
+                            fontWeight: FontWeight.normal,
+                            textAlign: TextAlign.left,
+                            text: fullStackMobileDeveloper
+                          ),
+                          SizedBox(height: 20),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 16),
+                            child: Row(
+                              children: [
+                                SvgPicture.asset(
+                                  'assets/images/github-142-svgrepo-com.svg',
+                                  width: 28,
+                                  height: 28,
+                                  colorFilter: const ColorFilter.mode(whiteColor, BlendMode.clear),),
+                                  SvgPicture.asset(
+                                    'assets/images/linkedin-svgrepo-com.svg',
+                                    width: 28,
+                                    height: 28,
+                                    colorFilter: const ColorFilter.mode(whiteColor, BlendMode.clear),
+                                  )
+                              ],
+                            ),
+                            )
+                        ],
+                    ),
                 ),
-          ),
-        child: Image.asset(
-            'assets/images/Foto_Semi_Formal.jpg',
-            fit: BoxFit.fill,
-            height: double.infinity,
-            width: double.infinity,
-        )
-      ),
-          Container(
-            color: Colors.transparent,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                TextWidget(text: myShortName, fontFamily: roadgeek, fontSize: 32, fontColor: whiteColor, fontWeight: FontWeight.bold),
-                TextWidget(text: fullStackMobileDeveloper, fontFamily: roadgeek, fontSize: 16, fontColor: whiteColor)
-              ],
-            )
-          ),
-        ],
-      )
+                
+              )
+              ), Expanded(
+                flex: 3,
+                child: Container(
+                  color: Color(0xff0e172a),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 100),
+                    child: TextWidget(
+                              fontColor: whiteColor,
+                              fontFamily: robotoLight,
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal,
+                              textAlign: TextAlign.left,
+                              text: aboutMeDesc,
+                              textHeight: 3
+                            ),
+                  ),
+                )
+              )
+          ],
+        ),
     );
   }
 

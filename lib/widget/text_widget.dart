@@ -6,10 +6,11 @@ class TextWidget extends StatelessWidget{
   double? fontSize;
   Color? fontColor;
   FontWeight? fontWeight;
+  double? textHeight;
   TextAlign? textAlign;
 
 
-  TextWidget({this.text, this.fontFamily, this.fontSize, this.fontColor, this.fontWeight, this.textAlign});
+  TextWidget({this.text, this.fontFamily, this.fontSize, this.fontColor, this.fontWeight, this.textAlign, this.textHeight});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class TextWidget extends StatelessWidget{
           fontSize: fontSize,
           color: fontColor,
           fontWeight: fontWeight,
+          height: textHeight
         )
       )
     );

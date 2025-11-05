@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  flutter_svg: ^2.2.2
   flutter:
     sdk: flutter
 
@@ -45,11 +46,15 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/4x6.jpg
-    - assets/images/Foto_Semi_Formal.jpg
+    - assets/images/DSCF2434 copy.jpg
+    - assets/images/foto_home_page.jpeg
+    - assets/images/github-142-svgrepo-com.svg
+    - assets/images/linkedin-svgrepo-com.svg
+
   fonts:
-    - family: Roadgeek
+    - family: ArchivoBlack
       fonts:
-        - asset: fonts/Roadgeek-2000-Series-em.ttf
+        - asset: fonts/ArchivoBlack-Regular.ttf
 
     - family: Roboto-Medium
       fonts:

@@ -1,4 +1,5 @@
 
+import 'package:dummy_project_for_exercise/constant/constant.dart';
 import 'package:dummy_project_for_exercise/content/about_me.dart';
 import 'package:dummy_project_for_exercise/content/contact_me.dart';
 import 'package:dummy_project_for_exercise/content/portfolio.dart';
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
-                    fontFamily: 'Roadgeek'
+                    fontFamily: archivoBlack
                 ),
               )
           )

@@ -23,7 +23,7 @@ class _AboutMeState extends State<AboutMe>{
       extendBody: true,
       body: Row(
         mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
               flex: 1,
@@ -56,7 +56,7 @@ class _AboutMeState extends State<AboutMe>{
                           style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
-                              fontFamily: roadgeek
+                              fontFamily: robotoLight
                           )
                       ),
                     ),
@@ -80,7 +80,7 @@ class _AboutMeState extends State<AboutMe>{
                             ),
                             child: TextWidget(
                               text: biodata,
-                              fontFamily: roadgeek,
+                              fontFamily: robotoLight,
                               fontColor: whiteColor,
                               fontSize: 12,
                               textAlign: TextAlign.center,
@@ -98,7 +98,7 @@ class _AboutMeState extends State<AboutMe>{
                             TextWidget(
                               text: placeOrDateOfBirth,
                               fontColor: whiteColor,
-                              fontFamily: roadgeek,
+                              fontFamily: archivoBlack,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
@@ -106,25 +106,13 @@ class _AboutMeState extends State<AboutMe>{
                             TextWidget(
                               text: placeOrDateOfBirthValue,
                               fontColor: whiteColor,
-                              fontFamily: roadgeek,
+                              fontFamily: robotoLight,
                               fontSize: 12,
                               fontWeight: FontWeight.normal,
                             )
                           ],
                         ),
                     ),
-                  
-                    // SizedBox(
-                    //   width: 300,
-                    //   height: 300,
-                    //   child: TextWidget(
-                    //       text: aboutMeDesc,
-                    //       fontFamily: roadgeek,
-                    //       fontColor: whiteColor,
-                    //       fontSize: 12,
-                    //       textAlign: TextAlign.justify,
-                    //   ),
-                    // )
                   ],
                 ),
               )
